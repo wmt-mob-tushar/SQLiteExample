@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_todo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp"
+        android:layout_margin="4dp"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/card_row"
+            android:padding="7dp"
+            android:background="#6B3A4149"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="210sp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title"
+                    android:textStyle="bold"
+                    android:textSize="22sp"
+                    android:textColor="#000000"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/description"
+                    android:textSize="18sp"
+                    android:textColor="#000000"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="end|center"
+               >
+
+                <ImageButton
+                    android:id="@+id/btn_update"
+                    android:layout_width="35sp"
+                    android:layout_height="35sp"
+                    android:src="@drawable/edit_pen_icon"
+                    android:background="@null"
+                    android:clickable="true"
+                    android:layout_marginHorizontal="10dp"
+                    />
+
+
+                <ImageButton
+                    android:id="@+id/btn_delete"
+                    android:layout_width="35sp"
+                    android:layout_height="35sp"
+                    android:src="@drawable/recycle_bin_icon"
+                    android:background="@null"
+                    android:clickable="true"
+                    android:layout_marginHorizontal="10dp"
+                    />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

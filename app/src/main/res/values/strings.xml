@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">SQLiteExample</string>
+    <string name="float_modal_btn" />
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+</resources>
